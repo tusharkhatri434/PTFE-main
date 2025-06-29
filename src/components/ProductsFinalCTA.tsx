@@ -21,7 +21,7 @@ const ProductsFinalCTA = () => {
               <FileText className="w-12 h-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-white mb-2">Get a Quote</h3>
               <p className="text-blue-200 text-sm mb-4">
-                Receive detailed pricing for your specific requirements
+                Pricing for your specific requirements
               </p>
               <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white w-full">
                 <Link to="/contact">Request Quote</Link>
@@ -36,7 +36,7 @@ const ProductsFinalCTA = () => {
               <p className="text-blue-200 text-sm mb-4">
                 Test our quality before placing your order
               </p>
-              <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 w-full">
+              <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
                 <Link to="/contact">Get Sample</Link>
               </Button>
             </CardContent>
@@ -49,7 +49,7 @@ const ProductsFinalCTA = () => {
               <p className="text-blue-200 text-sm mb-4">
                 Speak with our engineering experts
               </p>
-              <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900 w-full">
+              <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
                 <Link to="/contact">Contact Engineers</Link>
               </Button>
             </CardContent>
@@ -61,7 +61,7 @@ const ProductsFinalCTA = () => {
             <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-blue-900 font-semibold px-8 py-4 text-lg">
               <Link to="/contact">Get Started Today</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 text-lg font-semibold">
+            <Button asChild variant="outline" size="lg" className="border-2 border-white text-blue-900 hover:bg-white px-8 py-4 text-lg font-semibold">
               <Link to="/infrastructure" className="text-black ">View Our Facility</Link>
             </Button>
           </div>

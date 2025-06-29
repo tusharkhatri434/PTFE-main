@@ -249,7 +249,7 @@ const DetailedProductSections = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {product.features.map((feature, idx) => <div key={idx} className="flex items-start space-x-3 p-3 bg-blue-50 rounded-lg">
                       <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-gray-700 font-inter font-medium">{feature}</span>
+                      <span className="text-base text-gray-700 font-inter font-medium">{feature}</span>
                     </div>)}
                 </div>
               </CardContent>
@@ -264,7 +264,7 @@ const DetailedProductSections = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {product.applications.map((application, idx) => <div key={idx} className="flex items-start space-x-3 p-3 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-all">
                       <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm text-gray-700 font-inter font-medium">{application}</span>
+                      <span className="text-base text-gray-700 font-inter font-medium">{application}</span>
                     </div>)}
                 </div>
               </CardContent>
@@ -286,8 +286,8 @@ const DetailedProductSections = () => {
                     </TableHeader>
                     <TableBody>
                       {product.specifications.map((spec, idx) => <TableRow key={idx} className="hover:bg-white">
-                          <TableCell className="font-medium text-gray-800 font-inter">{spec.property}</TableCell>
-                          <TableCell className="text-gray-700 font-inter">{spec.value}</TableCell>
+                          <TableCell className="font-medium text-base text-gray-800 font-inter">{spec.property}</TableCell>
+                          <TableCell className="text-gray-700 text-base font-inter">{spec.value}</TableCell>
                         </TableRow>)}
                     </TableBody>
                   </Table>

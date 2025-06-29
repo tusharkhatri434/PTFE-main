@@ -174,7 +174,7 @@ const QualityAssurance = () => {
             <h2 className="responsive-heading font-bold font-poppins mb-6 text-silver-900">
               Our Quality Standards
             </h2>
-            <p className="responsive-subheading max-w-3xl mx-auto text-black text-base">
+            <p className="responsive-subheading max-w-3xl mx-auto text-black text-base lg:text-nowrap">
               Committed to excellence through internationally recognized quality standards and certifications
             </p>
           </div>

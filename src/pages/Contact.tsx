@@ -203,7 +203,7 @@ const Contact = () => {
               <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-silver-100">
                 <a href="tel:+911212440676">Call Now</a>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-900">
+              <Button asChild variant="outline" size="lg" className="bg-white text-blue-900 hover:text-blue-900">
                 <a href="mailto:info@meerutptfe.com">Send Email</a>
               </Button>
             </div>

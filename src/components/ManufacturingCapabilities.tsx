@@ -30,10 +30,10 @@ const ManufacturingCapabilities = () => {
     <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
          <div className="text-center lg:text-left mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-poppins">
+            <h2 className="text-4xl text-center md:text-5xl font-bold text-gray-900 mb-6 font-poppins">
                 In-House Precision Manufacturing in Meerut
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed font-open-sans">
+              <p className="text-xl text-center text-gray-600 leading-relaxed font-open-sans">
                 Our state-of-the-art 7,000 sq. ft. facility combines advanced technology with skilled craftsmanship to deliver superior PTFE products that meet the highest industry standards.
               </p>
             </div>

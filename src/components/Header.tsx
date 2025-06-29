@@ -30,7 +30,7 @@ const Header = () => {
     { name: "About Us", hasDropdown: true },
     { name: "Our Products", path: "/products", hasDropdown: true },
     { name: "Our Clients", path: "/clients" },
-    { name: "Contact", path: "/contact" }
+    { name: "Contact Us", path: "/contact" }
   ];
 
   useEffect(() => {
@@ -125,7 +125,7 @@ const Header = () => {
                     <button
                       onClick={() => handleNavigation(link.path)}
                       className={`py-2 px-4 text-sm font-medium rounded-lg transition-all duration-200 ${
-                        isActive(link)
+                        (isActive(link) || (link.path=="/contact"))
                           ? "bg-blue-600 text-white border border-blue-500"
                           : "text-white hover:text-blue-400 hover:bg-gray-700 border border-transparent"
                       }`}

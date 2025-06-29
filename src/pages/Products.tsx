@@ -63,8 +63,7 @@ const Products = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6 font-poppins">Our Product Range</h2>
-            <p className="max-w-3xl mx-auto font-open-sans text-lg text-black">In-depth technical information, features, applications and specifications 
-for each PTFE product category</p>
+            <p className="max-w-3xl mx-auto font-open-sans text-lg text-black lg:text-nowrap">In-depth technical information, features, applications and specifications for each PTFE product category</p>
           </div>
           <DetailedProductSections />
         </div>

@@ -18,7 +18,7 @@ const Footer = () => {
               <img alt="Meerut PTFE Products" src="/lovable-uploads/5f7ae142-065e-4ace-85eb-c0114887bf76.png" className="w-90 h-15 object-fill" />
               <div></div>
             </div>
-            <p className="text-silver-300 mb-4 font-open-sans text-sm">
+            <p className="text-silver-300 mb-4 font-open-sans text-base">
               Leading manufacturer and exporter of premium PTFE Teflon Insulated Wires and Cables since 1986.
             </p>
             <div className="flex items-center space-x-4">
@@ -35,22 +35,22 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="px-[10px]">
-            <h4 className="text-lg font-semibold font-montserrat mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li className="text-sm "><Link to="/" className="text-silver-300 hover:text-white transition-colors">Home</Link></li>
-              <li className="text-sm "><Link to="/about" className="text-silver-300 hover:text-white transition-colors">About Us</Link></li>
-              <li className="text-sm "><Link to="/products" className="text-silver-300 hover:text-white transition-colors">Products</Link></li>
-              <li className="text-sm "><Link to="/quality-assurance" className="text-silver-300 hover:text-white transition-colors">Quality Assurance</Link></li>
-              <li className="text-sm "><Link to="/clients" className="text-silver-300 hover:text-white transition-colors">Clients</Link></li>
-              <li className="text-sm "><Link to="/infrastructure" className="text-silver-300 hover:text-white transition-colors">Infrastructure</Link></li>
-              <li className="text-sm "><Link to="/contact" className="text-silver-300 hover:text-white transition-colors">Contact</Link></li>
+            <h4 className="text-xl font-semibold font-montserrat mb-4">Quick Links</h4>
+            <ul className="space-y-2 ml-1">
+              <li className="text-base"><Link to="/" className="text-silver-300 hover:text-white transition-colors">Home</Link></li>
+              <li className="text-base"><Link to="/about" className="text-silver-300 hover:text-white transition-colors">About Us</Link></li>
+              <li className="text-base"><Link to="/products" className="text-silver-300 hover:text-white transition-colors">Products</Link></li>
+              <li className="text-base"><Link to="/quality-assurance" className="text-silver-300 hover:text-white transition-colors">Quality Assurance</Link></li>
+              <li className="text-base"><Link to="/clients" className="text-silver-300 hover:text-white transition-colors">Clients</Link></li>
+              <li className="text-base"><Link to="/infrastructure" className="text-silver-300 hover:text-white transition-colors">Infrastructure</Link></li>
+              <li className="text-base"><Link to="/contact" className="text-silver-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           {/* Products */}
           <div>
-            <h4 className="text-lg font-semibold font-montserrat mb-4">Our Products</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="text-xl font-semibold font-montserrat mb-4">Our Products</h4>
+            <ul className="space-y-2 text-base ml-1">
               <li><Link to="/products#ptfe-hookup-wires" className="text-silver-300 hover:text-white transition-colors">PTFE Hookup Wires</Link></li>
               <li><Link to="/products#ptfe-high-voltage-corona-cables" className="text-silver-300 hover:text-white transition-colors">High Voltage Corona Cables</Link></li>
               <li><Link to="/products#ptfe-multicore-twisted-cables" className="text-silver-300 hover:text-white transition-colors">Multicore Twisted Cables</Link></li>
@@ -68,7 +68,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-silver-300 text-sm">
+                  <p className="text-silver-300 text-base">
                     C-2, Industrial Estate, Partapur<br />
                     Meerut, Uttar Pradesh 250103<br />
                     India
@@ -78,21 +78,21 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-blue-400" />
                 <div>
-                  <p className="text-silver-300 text-sm">+91-121-2440676</p>
-                  <p className="text-silver-300 text-sm">+91-121-2440677</p>
+                  <p className="text-silver-300 text-base">+91-121-2440676</p>
+                  <p className="text-silver-300 text-base">+91-121-2440677</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <p className="text-silver-300 text-sm">info@meerutptfe.com</p>
+                <p className="text-silver-300 text-base">info@meerutptfe.com</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Globe className="w-5 h-5 text-blue-400" />
-                <p className="text-silver-300 text-sm">Exporting to Dubai, UK & More</p>
+                <p className="text-silver-300 text-base">Exporting to Dubai, UK & More</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Users className="w-5 h-5 text-blue-400" />
-                <p className="text-silver-300 text-sm">Director: Mr. Mukesh Kumar</p>
+                <p className="text-silver-300 text-base">Director: Mr. Mukesh Kumar</p>
               </div>
             </div>
           </div>
