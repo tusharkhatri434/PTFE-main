@@ -51,13 +51,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold font-montserrat mb-4">Our Products</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/products/ptfe-hookup-wires" className="text-silver-300 hover:text-white transition-colors">PTFE Hookup Wires</Link></li>
-              <li><Link to="/products/ptfe-high-voltage-corona-cables" className="text-silver-300 hover:text-white transition-colors">High Voltage Corona Cables</Link></li>
-              <li><Link to="/products/ptfe-multicore-twisted-cables" className="text-silver-300 hover:text-white transition-colors">Multicore Twisted Cables</Link></li>
-              <li><Link to="/products/ptfe-rf-coaxial-cables" className="text-silver-300 hover:text-white transition-colors">RF Coaxial Cables</Link></li>
-              <li><Link to="/products/ptfe-thermocouple-cables" className="text-silver-300 hover:text-white transition-colors">Thermocouple Cables</Link></li>
-              <li><Link to="/products/ptfe-insulated-sleeves" className="text-silver-300 hover:text-white transition-colors">Insulated Sleeves</Link></li>
-              <li><Link to="/products/cured-ptfe-tapes-sheets" className="text-silver-300 hover:text-white transition-colors">PTFE Tapes & Sheets</Link></li>
+              <li><Link to="/products#ptfe-hookup-wires" className="text-silver-300 hover:text-white transition-colors">PTFE Hookup Wires</Link></li>
+              <li><Link to="/products#ptfe-high-voltage-corona-cables" className="text-silver-300 hover:text-white transition-colors">High Voltage Corona Cables</Link></li>
+              <li><Link to="/products#ptfe-multicore-twisted-cables" className="text-silver-300 hover:text-white transition-colors">Multicore Twisted Cables</Link></li>
+              <li><Link to="/products#ptfe-rf-coaxial-cables" className="text-silver-300 hover:text-white transition-colors">RF Coaxial Cables</Link></li>
+              <li><Link to="/products#ptfe-thermocouple-cables" className="text-silver-300 hover:text-white transition-colors">Thermocouple Cables</Link></li>
+              <li><Link to="/products#ptfe-insulated-sleeves" className="text-silver-300 hover:text-white transition-colors">Insulated Sleeves</Link></li>
+              <li><Link to="/products#cured-ptfe-tapes-sheets" className="text-silver-300 hover:text-white transition-colors">PTFE Tapes & Sheets</Link></li>
             </ul>
           </div>
 
