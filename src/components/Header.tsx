@@ -31,21 +31,16 @@ const Header = () => {
     slug: "cured-ptfe-tapes-sheets"
   }];
   const aboutSections = [{
-    name: "Our Journey",
-    anchor: "#journey"
+    name: "Company Profile",
+    anchor: "/about"
   }, {
-    name: "Core Values",
-    anchor: "#values"
+    name: "Our Certifications",
+    anchor: "/quality-assurance"
   }, {
-    name: "Timeline",
-    anchor: "#timeline"
-  }, {
-    name: "Leadership",
-    anchor: "#leadership"
-  }, {
-    name: "Achievements",
-    anchor: "#achievements"
+    name: "Our Infrastructure",
+    anchor: "/infrastructure"
   }];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -53,6 +48,7 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const scrollToSection = (anchor: string) => {
     if (location.pathname !== '/about') {
       navigate('/about');
@@ -78,12 +74,14 @@ const Header = () => {
       }
     }
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
+
   const handleNavigation = (path: string) => {
     if (location.pathname !== path) {
       navigate(path);
@@ -95,27 +93,24 @@ const Header = () => {
     }
     setIsMobileMenuOpen(false);
   };
+
   const navLinks = [{
     name: "Home",
     path: "/"
   }, {
     name: "About Us",
-    path: "/about",
+    // path: "/about",
     hasDropdown: true
   }, {
     name: "Our Products",
     path: "/products",
     hasDropdown: true
-  }, {
-    name: "Our Certifications",
-    path: "/quality-assurance"
-  }, {
+  }, 
+ {
     name: "Our Clients",
     path: "/clients"
-  }, {
-    name: "Our Infrastructure",
-    path: "/infrastructure"
-  }, {
+  },
+   {
     name: "Contact",
     path: "/contact"
   }];
@@ -155,12 +150,12 @@ const Header = () => {
                               </DropdownMenuItem>)}
                           </> : <>
                             <DropdownMenuItem asChild>
-                              <button onClick={() => handleNavigation("/about")} className="w-full text-left block px-4 py-3 text-sm font-medium text-gray-200 hover:bg-gray-700 hover:text-blue-400 transition-all duration-200 rounded-lg cursor-pointer border-b border-gray-600 mb-2">
+                              {/* <button onClick={() => handleNavigation("/about")} className="w-full text-left block px-4 py-3 text-sm font-medium text-gray-200 hover:bg-gray-700 hover:text-blue-400 transition-all duration-200 rounded-lg cursor-pointer border-b border-gray-600 mb-2">
                                 Overview
-                              </button>
+                              </button> */}
                             </DropdownMenuItem>
                             {aboutSections.map(section => <DropdownMenuItem key={section.anchor} asChild>
-                                <button onClick={() => scrollToSection(section.anchor)} className="w-full text-left block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-blue-400 transition-all duration-200 rounded-lg cursor-pointer">
+                                <button onClick={() => navigate(section.anchor)} className="w-full text-left block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-blue-400 transition-all duration-200 rounded-lg cursor-pointer">
                                   {section.name}
                                 </button>
                               </DropdownMenuItem>)}
@@ -195,11 +190,11 @@ const Header = () => {
                         </button>)}
                     </div>}
                   {link.hasDropdown && link.name === "About Us" && <div className="pl-6 space-y-1 mb-3">
-                      <button onClick={() => handleNavigation("/about")} className="w-full text-left block py-2 px-3 text-sm text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">
+                      {/* <button onClick={() => handleNavigation("/about")} className="w-full text-left block py-2 px-3 text-sm text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">
                         Overview
-                      </button>
+                      </button> */}
                       {aboutSections.map(section => <button key={section.anchor} onClick={() => {
-                scrollToSection(section.anchor);
+                navigate(section.anchor);
                 setIsMobileMenuOpen(false);
               }} className="w-full text-left block py-2 px-3 text-xs text-gray-400 hover:text-blue-400 transition-colors duration-200">
                           {section.name}

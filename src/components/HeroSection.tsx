@@ -45,7 +45,7 @@ const HeroSection = () => {
   return <section className="relative h-[80vh] overflow-hidden">
       {/* Background Slides */}
       {slides.map((slide, index) => <div key={index} className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}>
-          <div className="absolute inset-0 z-10 bg-black/20" />
+          <div className="absolute inset-0 z-10 bg-black/40" />
           <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
         </div>)}
 

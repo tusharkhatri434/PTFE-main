@@ -165,7 +165,7 @@ const About = () => {
             <h2 className="responsive-heading font-bold font-poppins mb-4 text-gradient">
               Our Journey Through Time
             </h2>
-            <p className="text-black text-black max-w-3xl mx-auto">
+            <p className="text-black max-w-3xl mx-auto">
               Key milestones that shaped our growth and success over the decades
             </p>
           </div>
@@ -188,7 +188,7 @@ const About = () => {
                             {milestone.year}
                           </span>
                         </div>
-                        <p className="responsive-text text-black text-black">
+                        <p className="responsive-text text-black">
                           {milestone.description}
                         </p>
                       </CardContent>

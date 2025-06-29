@@ -219,11 +219,9 @@ const DetailedProductSections = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8">
               {/* Left Column - Image */}
-              <div className="flex justify-center lg:justify-start">
-                <div className="w-80 h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 flex items-center justify-center shadow-sm" style={{
-              aspectRatio: '1/1'
-            }}>
-                  <img src={product.image} alt={product.title} className="max-w-full max-h-full object-cover rounded-lg shadow-md" style={{
+              <div className="flex w-full h-full justify-center lg:justify-start">
+                <div className="w-full h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-3 flex items-center justify-center shadow-sm">
+                  <img src={product.image} alt={product.title} className="w-full h-full object-cover rounded-lg shadow-md" style={{
                 objectFit: 'cover'
               }} />
                 </div>

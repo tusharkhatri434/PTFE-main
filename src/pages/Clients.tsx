@@ -461,7 +461,7 @@ const Clients = () => {
               <Button asChild size="lg" variant="white" className="text-blue-900 hover:text-blue-900">
                 <Link to="/contact" className="bg-white text-black">Start Partnership</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-900">
+              <Button asChild variant="outline" size="lg" className="border-white text-blue-900 hover:bg-white hover:text-blue-900">
                 <Link to="/products" className="text-black hover:text-blue-900">View Products</Link>
               </Button>
             </div>
