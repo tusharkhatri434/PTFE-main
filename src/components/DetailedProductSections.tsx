@@ -5,7 +5,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { ArrowRight, Download, CheckCircle } from "lucide-react";
 const DetailedProductSections = () => {
   const products = [{
-    id: 1,
+    id: "ptfe-hookup-wires",
     title: "PTFE (Teflon) Insulated Equipment Hookup Wires & Cables",
     image: "/lovable-uploads/c4401f13-0b5e-4dbe-95da-f8ae4ebba747.png",
     overview: "These PTFE-insulated hookup wires are specially designed for internal equipment wiring in high-performance electronic systems. Withstanding extreme temperatures and harsh environments, they ensure stable operation in aerospace, military, and industrial control systems. Their consistent dielectric properties across a wide frequency range make them ideal for sensitive applications.",
@@ -40,7 +40,7 @@ const DetailedProductSections = () => {
       value: ">500 V/mil"
     }]
   }, {
-    id: 2,
+    id: "ptfe-high-voltage-corona-cables",
     title: "PTFE High Voltage Corona Resistant Cables",
     image: "/lovable-uploads/dbf4af32-1272-4e5d-8351-63ea0a4bb757.png",
     overview: "PTFE High Voltage Corona Resistant Cables are optimized for continuous operation under high electric stress. Their advanced construction resists partial discharges and corona inception that typically degrade cable life. These are perfect for use in pulse applications and environments requiring exceptional dielectric endurance.",
@@ -72,7 +72,7 @@ const DetailedProductSections = () => {
       value: "10x outer diameter"
     }]
   }, {
-    id: 3,
+    id: "ptfe-multicore-twisted-cables",
     title: "Single / Multicore Twisted, Shielded & Sheathed Cables",
     image: "/lovable-uploads/42451d99-5f2b-4b15-8edc-019ddcf11a8a.png",
     overview: "These cables are engineered for applications requiring noise immunity and minimal signal loss. Their twisted pair arrangement and shielding combinations reduce EMI and crosstalk, making them suitable for industrial networking, defense communication, and control systems. They are often used in low-voltage analog and digital signal transmission.",
@@ -104,7 +104,7 @@ const DetailedProductSections = () => {
       value: "≤50 pF/m"
     }]
   }, {
-    id: 4,
+    id: "ptfe-rf-coaxial-cables",
     title: "PTFE RF Coaxial Cables",
     image: "/lovable-uploads/a765da98-9d8a-4d2d-af71-2eca83e5412b.png",
     overview: "These coaxial cables are designed to maintain low signal attenuation over long distances. They offer high shielding effectiveness and are highly stable across wide frequency bands, ideal for critical communication systems and RF testing environments.",
@@ -133,7 +133,7 @@ const DetailedProductSections = () => {
       value: "FEP/PTFE"
     }]
   }, {
-    id: 5,
+    id: "ptfe-thermocouple-cables",
     title: "PTFE Thermocouple Compensating Cables",
     image: "/lovable-uploads/9b0ead4d-effa-43e8-9059-02cc56c811bb.png",
     overview: "Designed for extending thermocouple signals with minimal signal distortion and high chemical resistance, these cables ensure accuracy and durability even in corrosive industrial environments.",
@@ -159,7 +159,7 @@ const DetailedProductSections = () => {
       value: "ANSI/IEC"
     }]
   }, {
-    id: 6,
+    id: "ptfe-insulated-sleeves",
     title: "PTFE Insulated Sleeves",
     image: "/lovable-uploads/a765da98-9d8a-4d2d-af71-2eca83e5412b.png",
     overview: "These are thin-wall, flexible sleeves manufactured with high-grade PTFE to insulate splices and components from abrasion and electrical discharge. Their heat and chemical resistance makes them indispensable in aerospace and nuclear plants.",
@@ -185,7 +185,7 @@ const DetailedProductSections = () => {
       value: ">200%"
     }]
   }, {
-    id: 7,
+    id: "cured-ptfe-tapes-sheets",
     title: "Cured PTFE Tapes & Sheets",
     image: "/lovable-uploads/a765da98-9d8a-4d2d-af71-2eca83e5412b.png",
     overview: "These cured films are specially processed to offer reliable sealing, wrapping, and barrier protection in a broad spectrum of industries. Their thermal, mechanical, and anti-stick properties make them irreplaceable in harsh applications.",
@@ -212,7 +212,7 @@ const DetailedProductSections = () => {
     }]
   }];
   return <div className="space-y-16">
-      {products.map((product, index) => <div key={product.id} className="bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden">
+      {products.map((product, index) => <div id={product.id.toString()} key={product.id} className="bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden">
           {/* Product Header Section - Two Column Layout */}
           <div className="p-8">
             

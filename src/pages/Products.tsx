@@ -8,6 +8,7 @@ import DetailedProductSections from "@/components/DetailedProductSections";
 import ManufacturingCapabilities from "@/components/ManufacturingCapabilities";
 import ProductsFAQ from "@/components/ProductsFAQ";
 import ProductsFinalCTA from "@/components/ProductsFinalCTA";
+import { useLocation } from "react-router-dom";
 const Products = () => {
   // Animation on scroll functionality
   useEffect(() => {
@@ -26,6 +27,22 @@ const Products = () => {
     animatedElements.forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
+
+    const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(()=>{
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        },100)
+      }
+    }
+  }, [hash]);
+
+
   console.log("Products page loaded");
   return <div className="min-h-screen bg-white">
       <Header />
