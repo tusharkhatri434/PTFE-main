@@ -3,7 +3,28 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Factory, Settings, Users, TrendingUp, Shield, Award } from "lucide-react";
+import HeroSectionAbout from "@/components/HeroSectionAbout";
+import { useEffect } from "react";
 const Infrastructure = () => {
+  
+    useEffect(() => {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          }
+        });
+      }, observerOptions);
+      const elements = document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-left, .animate-on-scroll-right, .animate-on-scroll-zoom');
+      elements.forEach(el => observer.observe(el));
+      return () => observer.disconnect();
+    }, []);
+  
+
   const facilities = [{
     title: "Manufacturing Unit",
     description: "State-of-the-art production facility with modern machinery and automated processes for consistent quality output.",
@@ -88,7 +109,7 @@ const Infrastructure = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 hero-gradient text-white">
+      {/* <section className="py-20 hero-gradient text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6">
             Our Infrastructure
@@ -101,7 +122,8 @@ const Infrastructure = () => {
             quality control systems to deliver superior PTFE products consistently.
           </p>
         </div>
-      </section>
+      </section> */}
+      <HeroSectionAbout title="Our Infrastructure" subtitle="State-of-the-Art 7,000 Sq. Ft. Facility Equipped with Advanced Technology" description="Our modern infrastructure combines advanced manufacturing capabilities with comprehensive quality control systems to deliver superior PTFE products consistently." backgroundImage="/lovable-uploads/img/ourInfrastrucutre.jpg" />
 
       {/* Infrastructure Stats */}
       <section className="py-20 bg-white">
@@ -215,7 +237,7 @@ const Infrastructure = () => {
       {/* Equipment & Machinery */}
       <section className="py-20 bg-silver-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-bold font-montserrat mb-6 text-silver-900">
                 Advanced Equipment & Machinery
@@ -252,8 +274,8 @@ const Infrastructure = () => {
             </div>
             
             <div>
-              <img alt="Manufacturing Facility" className="rounded-lg shadow-2xl mb-6" src="/lovable-uploads/171ebdf8-6aa2-4c8d-87de-0c54e7ec64cf.jpg" />
-              <img alt="Quality Testing Lab" className="rounded-lg shadow-2xl" src="/lovable-uploads/8509ae45-aebc-47fe-8d2c-0ff3df1e8cf4.jpg" />
+              <img alt="Manufacturing Facility" className="rounded-lg shadow-2xl mb-6 w-full h-[30rem] md:h-[45rem]" src="/lovable-uploads/img/AdvancedEquipment&Machinery.jpeg" />
+              {/* <img alt="Quality Testing Lab" className="rounded-lg shadow-2xl" src="/lovable-uploads/8509ae45-aebc-47fe-8d2c-0ff3df1e8cf4.jpg" /> */}
             </div>
           </div>
         </div>

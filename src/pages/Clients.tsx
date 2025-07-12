@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Building2, Users, Award, TrendingUp, CheckCircle, Star, Rocket, Shield, Zap, Plane, Factory, Globe, Target, Microscope, Wrench, Settings, Syringe } from "lucide-react";
+import HeroSectionAbout from "@/components/HeroSectionAbout";
 const Clients = () => {
   // Animation on scroll functionality
   useEffect(() => {
@@ -141,7 +142,7 @@ const Clients = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="section-spacing hero-gradient text-white">
+      {/* <section className="section-spacing hero-gradient text-white">
         <div className="content-container text-center">
           <div className="animate-on-scroll">
             <h1 className="responsive-heading font-poppins mb-6 font-bold text-5xl">
@@ -155,7 +156,8 @@ const Clients = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
+      <HeroSectionAbout title="Our Esteemed Clients" subtitle="Proudly partnering with India's top organizations in defense, aerospace, power, and research to deliver precision and reliability." description="At Instrumentation Limited, Kota, we take great pride in being the trusted partner of India's most respected organizations across defense, aerospace, research, energy, and industrial sectors." backgroundImage="/lovable-uploads/img/ourClients.jpg" />
 
       {/* Industries We Serve Section */}
       <section className="py-20 bg-gray-50">

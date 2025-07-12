@@ -69,9 +69,9 @@ const ManufacturingCapabilities = () => {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src="/lovable-uploads/7bff7b4a-bd2d-4fd7-951b-1746a51b0f22.png" 
+                src="/lovable-uploads/img/In-HousePrecisionManufacturinginMeerut.jpeg" 
                 alt="Manufacturing Facility" 
-                className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500" 
+                className="w-full h-96 sm:h-[34rem] object-cover group-hover:scale-105 transition-transform duration-500" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
               <div className="absolute bottom-6 left-6 text-white">

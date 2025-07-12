@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Shield, CheckCircle, Settings, Users, TrendingUp, Globe, FileCheck, Star } from "lucide-react";
 import { useEffect } from "react";
+import HeroSectionAbout from "@/components/HeroSectionAbout";
 
 const QualityAssurance = () => {
   useEffect(() => {
@@ -136,7 +137,7 @@ const QualityAssurance = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="section-spacing hero-gradient text-white">
+      {/* <section className="section-spacing hero-gradient text-white">
         <div className="content-container text-center">
           <div className="animate-on-scroll">
             <h1 className="responsive-heading font-bold font-poppins mb-6">
@@ -151,7 +152,9 @@ const QualityAssurance = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <HeroSectionAbout title="Quality Assurance" subtitle="Delivering Excellence Through Rigorous Quality Control and International Standards" description="Our commitment to quality is unwavering. Every product undergoes stringent testing quality control processes to ensure superior performance and reliability." backgroundImage="/lovable-uploads/img/OurCertifications.jpg" />
 
       {/* Quality Philosophy */}
       <section className="section-spacing bg-white">

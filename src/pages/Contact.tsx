@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Clock, Globe, User } from "lucide-react";
+import HeroSectionAbout from "@/components/HeroSectionAbout";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -16,9 +17,23 @@ const Contact = () => {
     subject: "",
     message: ""
   });
-  const {
-    toast
-  } = useToast();
+  const {toast} = useToast();
+  useEffect(() => {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          }
+        });
+      }, observerOptions);
+      const animatedElements = document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-left, .animate-on-scroll-right, .animate-on-scroll-zoom');
+      animatedElements.forEach(el => observer.observe(el));
+      return () => observer.disconnect();
+    }, []);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
@@ -70,7 +85,7 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 hero-gradient text-white">
+      {/* <section className="py-20 hero-gradient text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold font-montserrat mb-6">
             Contact Us
@@ -83,7 +98,9 @@ const Contact = () => {
             Contact us for quotes, technical specifications, or custom solutions.
           </p>
         </div>
-      </section>
+      </section> */}
+      <HeroSectionAbout title="Our Infrastructure" subtitle="State-of-the-Art 7,000 Sq. Ft. Facility Equipped with Advanced Technology" description="Our modern infrastructure combines advanced manufacturing capabilities with comprehensive quality control systems to deliver superior PTFE products consistently." backgroundImage="/lovable-uploads/img/contactUs.png" />
+      
 
       {/* Contact Form and Info */}
       <section className="py-20 bg-white">

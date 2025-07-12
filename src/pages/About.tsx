@@ -3,7 +3,9 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Users, Globe, TrendingUp, Factory, Lightbulb, Shield, Star } from "lucide-react";
 import { useEffect } from "react";
+import HeroSectionAbout from "@/components/HeroSectionAbout";
 const About = () => {
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -20,6 +22,7 @@ const About = () => {
     elements.forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
+
   const milestones = [{
     year: "1986",
     event: "Company Established",
@@ -72,7 +75,7 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="section-spacing hero-gradient text-white">
+      {/* <section className="section-spacing hero-gradient text-white">
         <div className="content-container text-center">
           <div className="animate-on-scroll">
             <h1 className="responsive-heading font-bold font-poppins mb-4">
@@ -83,7 +86,9 @@ const About = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <HeroSectionAbout title="About Meerut PTFE Products" subtitle="Three decades of innovation, quality, and excellence in PTFE Teflon Insulated Wires and Cables" description="" backgroundImage="/lovable-uploads/img/companyProfile.jpg" />
 
       {/* Company Story */}
       <section id="journey" className="section-spacing bg-white">
