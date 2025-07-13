@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Clock, Globe, User } from "lucide-react";
 import HeroSectionAbout from "@/components/HeroSectionAbout";
+import GoogleMapEmbed from "@/components/GoogleMapEmbed";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -164,6 +165,9 @@ const Contact = () => {
                   </form>
                 </CardContent>
               </Card>
+
+              {/* Google Map */}
+              <GoogleMapEmbed />
             </div>
 
             {/* Contact Information */}
