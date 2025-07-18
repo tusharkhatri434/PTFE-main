@@ -3,11 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowRight, Download, CheckCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 const DetailedProductSections = () => {
+ 
+  const navigate  = useNavigate();
+
+  function handleClick(){
+    navigate("/contact");
+  }
+  
   const products = [{
     id: "ptfe-hookup-wires",
     title: "PTFE (Teflon) Insulated Equipment Hookup Wires & Cables",
-    image: "/lovable-uploads/c4401f13-0b5e-4dbe-95da-f8ae4ebba747.png",
+    image: "/lovable-uploads/products/PTFETeflonInsulatedEquipmentHookupWires&Cables.png",
     overview: "These PTFE-insulated hookup wires are specially designed for internal equipment wiring in high-performance electronic systems. Withstanding extreme temperatures and harsh environments, they ensure stable operation in aerospace, military, and industrial control systems. Their consistent dielectric properties across a wide frequency range make them ideal for sensitive applications.",
     features: ["Withstands temperatures from -65°C to +260°C", "Uniform insulation thickness", "Excellent resistance to flame, chemicals, and abrasion", "High frequency and low noise transmission", "Available in a wide range of gauge sizes and color codes"],
     applications: ["Aerospace and military avionics", "High-end audio equipment", "Nuclear power instrumentation", "Medical imaging machines", "Laboratory-grade analytical instruments"],
@@ -42,7 +50,7 @@ const DetailedProductSections = () => {
   }, {
     id: "ptfe-high-voltage-corona-cables",
     title: "PTFE High Voltage Corona Resistant Cables",
-    image: "/lovable-uploads/dbf4af32-1272-4e5d-8351-63ea0a4bb757.png",
+    image: "/lovable-uploads/products/PTFE_High_Voltage_Corona_Resistant_Cables.png",
     overview: "PTFE High Voltage Corona Resistant Cables are optimized for continuous operation under high electric stress. Their advanced construction resists partial discharges and corona inception that typically degrade cable life. These are perfect for use in pulse applications and environments requiring exceptional dielectric endurance.",
     features: ["Multi-layered PTFE insulation with nano-enhanced compounds", "Voids and crack-free extruded walls", "Corona-resistant life >10,000 hrs at rated voltage", "Capable of high pulse repetition rate (PRR)", "Low partial discharge (<5 pC at 20 kV)"],
     applications: ["MRI and diagnostic equipment", "Pulse-forming networks in radar", "Ionizers and ozone generators", "Plasma research instruments", "High-energy lab circuits"],
@@ -74,7 +82,7 @@ const DetailedProductSections = () => {
   }, {
     id: "ptfe-multicore-twisted-cables",
     title: "Single / Multicore Twisted, Shielded & Sheathed Cables",
-    image: "/lovable-uploads/42451d99-5f2b-4b15-8edc-019ddcf11a8a.png",
+    image: "/lovable-uploads/products/Single_Multicore_Twisted_Shielded_Sheathed_Cables.png",
     overview: "These cables are engineered for applications requiring noise immunity and minimal signal loss. Their twisted pair arrangement and shielding combinations reduce EMI and crosstalk, making them suitable for industrial networking, defense communication, and control systems. They are often used in low-voltage analog and digital signal transmission.",
     features: ["Custom-configurable core layouts", "Multiple shielding: braid, foil, combination", "High resistance to fire, oil, UV, solvents", "Excellent flexibility for dynamic movement", "Long operational life in hostile environments"],
     applications: ["RS-232, RS-485, CAN-Bus communications", "Factory automation and robotics", "Missile system interconnects", "Shipboard wiring systems", "Data acquisition systems"],
@@ -106,7 +114,7 @@ const DetailedProductSections = () => {
   }, {
     id: "ptfe-rf-coaxial-cables",
     title: "PTFE RF Coaxial Cables",
-    image: "/lovable-uploads/a765da98-9d8a-4d2d-af71-2eca83e5412b.png",
+    image: "/lovable-uploads/products/PTFE_RF_Coaxial_Cables.png",
     overview: "These coaxial cables are designed to maintain low signal attenuation over long distances. They offer high shielding effectiveness and are highly stable across wide frequency bands, ideal for critical communication systems and RF testing environments.",
     features: ["High impedance consistency", "Very low dielectric constant", "Expanded PTFE dielectric for stable propagation", "Resistance to RF radiation leakage"],
     applications: ["Satellite uplink and telemetry", "Military-grade radar systems", "RF test and measurement systems", "EMI-sensitive communication setups"],
@@ -135,7 +143,7 @@ const DetailedProductSections = () => {
   }, {
     id: "ptfe-thermocouple-cables",
     title: "PTFE Thermocouple Compensating Cables",
-    image: "/lovable-uploads/9b0ead4d-effa-43e8-9059-02cc56c811bb.png",
+    image: "/lovable-uploads/products/PTFE_Thermocouple_Compensating_Cables.png",
     overview: "Designed for extending thermocouple signals with minimal signal distortion and high chemical resistance, these cables ensure accuracy and durability even in corrosive industrial environments.",
     features: ["ANSI and IEC color-coded insulation", "Excellent resistance to acids and solvents", "Twisted pair construction for noise immunity", "Stable EMF over temperature variations"],
     applications: ["Cement kilns and furnaces", "Petrochemical and metallurgical labs", "Steam turbine monitoring", "Cryogenic testing chambers"],
@@ -161,7 +169,7 @@ const DetailedProductSections = () => {
   }, {
     id: "ptfe-insulated-sleeves",
     title: "PTFE Insulated Sleeves",
-    image: "/lovable-uploads/a765da98-9d8a-4d2d-af71-2eca83e5412b.png",
+    image: "/lovable-uploads/products/Ptfe_Insulated_sleeves.png",
     overview: "These are thin-wall, flexible sleeves manufactured with high-grade PTFE to insulate splices and components from abrasion and electrical discharge. Their heat and chemical resistance makes them indispensable in aerospace and nuclear plants.",
     features: ["Continuous operation at 260°C", "Smooth inner and outer surfaces", "Non-flammable and halogen-free", "Available in rolls and cut lengths"],
     applications: ["Terminal lead insulation", "Harness bundling", "Motor and transformer lead protection", "Circuit board terminal shielding"],
@@ -184,59 +192,64 @@ const DetailedProductSections = () => {
       property: "Elongation",
       value: ">200%"
     }]
-  }, {
-    id: "cured-ptfe-tapes-sheets",
-    title: "Cured PTFE Tapes & Sheets",
-    image: "/lovable-uploads/a765da98-9d8a-4d2d-af71-2eca83e5412b.png",
-    overview: "These cured films are specially processed to offer reliable sealing, wrapping, and barrier protection in a broad spectrum of industries. Their thermal, mechanical, and anti-stick properties make them irreplaceable in harsh applications.",
-    features: ["Available in skived and molded formats", "Resistant to almost all industrial chemicals", "Non-stick surface for anti-adhesion purposes", "Sintered at high temperature for enhanced integrity"],
-    applications: ["Expansion joint wrapping", "High-temperature gasketing", "Lining in chemical tanks", "Laminate barrier systems"],
-    specifications: [{
-      property: "Thickness",
-      value: "0.05 mm – 5 mm"
-    }, {
-      property: "Width Range",
-      value: "Up to 1200 mm"
-    }, {
-      property: "Tensile Strength",
-      value: ">20 MPa"
-    }, {
-      property: "Elongation",
-      value: ">250%"
-    }, {
-      property: "Surface Options",
-      value: "Smooth / Etched / Textured"
-    }, {
-      property: "Operating Temp",
-      value: "-180°C to +260°C"
-    }]
-  }];
+  }, 
+  // {
+  //   id: "cured-ptfe-tapes-sheets",
+  //   title: "Cured PTFE Tapes & Sheets",
+  //   image: "/lovable-uploads/a765da98-9d8a-4d2d-af71-2eca83e5412b.png",
+  //   overview: "These cured films are specially processed to offer reliable sealing, wrapping, and barrier protection in a broad spectrum of industries. Their thermal, mechanical, and anti-stick properties make them irreplaceable in harsh applications.",
+  //   features: ["Available in skived and molded formats", "Resistant to almost all industrial chemicals", "Non-stick surface for anti-adhesion purposes", "Sintered at high temperature for enhanced integrity"],
+  //   applications: ["Expansion joint wrapping", "High-temperature gasketing", "Lining in chemical tanks", "Laminate barrier systems"],
+  //   specifications: [{
+  //     property: "Thickness",
+  //     value: "0.05 mm – 5 mm"
+  //   }, {
+  //     property: "Width Range",
+  //     value: "Up to 1200 mm"
+  //   }, {
+  //     property: "Tensile Strength",
+  //     value: ">20 MPa"
+  //   }, {
+  //     property: "Elongation",
+  //     value: ">250%"
+  //   }, {
+  //     property: "Surface Options",
+  //     value: "Smooth / Etched / Textured"
+  //   }, {
+  //     property: "Operating Temp",
+  //     value: "-180°C to +260°C"
+  //   }]
+  // }
+];
   return <div className="space-y-16">
       {products.map((product, index) => <div id={product.id.toString()} key={product.id} className="bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden">
           {/* Product Header Section - Two Column Layout */}
           <div className="p-8">
             
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8">
-              {/* Left Column - Image */}
-              <div className="flex w-full h-full justify-center lg:justify-start">
-                <div className="w-full h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-3 flex items-center justify-center shadow-sm">
-                  <img src={product.image} alt={product.title} className="w-full h-full object-cover rounded-lg shadow-md" style={{
-                objectFit: 'cover'
-              }} />
-                </div>
-              </div>
-              
-              {/* Right Column - Product Overview */}
-              <div className="flex flex-col justify-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 leading-tight font-poppins">
-                  {product.title}
-                </h2>
-                <p className="text-base leading-relaxed font-inter text-justify text-black">
-                  {product.overview}
-                </p>
-              </div>
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8 items-center">
+  {/* Left Column - Image */}
+  <div className="flex justify-center">
+    <div className="h-96 w-full max-w-md bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-3 flex items-center justify-center shadow-sm">
+      <img
+        src={product.image}
+        alt={product.title}
+        className="w-full h-full object-cover rounded-lg shadow-md"
+      />
+    </div>
+  </div>
+
+  {/* Right Column - Product Overview */}
+  <div className="flex flex-col justify-center text-center lg:text-left">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 leading-tight font-poppins">
+      {product.title}
+    </h2>
+    <p className="text-base leading-relaxed font-inter text-black">
+      {product.overview}
+    </p>
+  </div>
+</div>
+
           </div>
 
           {/* Features Card */}
@@ -297,13 +310,13 @@ const DetailedProductSections = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 font-semibold rounded-xl transition-all duration-200 flex-1 text-base shadow-md hover:shadow-lg text-white">
+              <Button onClick={handleClick} className="bg-blue-600 hover:bg-blue-700 px-6 py-3 font-semibold rounded-xl transition-all duration-200 flex-1 text-base shadow-md hover:shadow-lg text-white">
                 Request Quote <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button variant="outline" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 font-semibold rounded-xl flex-1 text-base shadow-md hover:shadow-lg">
+              {/* <Button variant="outline" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 font-semibold rounded-xl flex-1 text-base shadow-md hover:shadow-lg">
                 <Download className="w-5 h-5 mr-2" />
                 Download Datasheet
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>)}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Globe, Award, Users, Clock } from "lucide-react";
+import WhatsAppButton from "./WhatsAppButton";
 const Footer = () => {
   return <footer className="bg-silver-900 text-white relative" style={{
     backgroundImage: `url('/lovable-uploads/80b09b92-7b05-4d97-a0e7-c4c4a5eb6afc.png')`,
@@ -57,7 +58,7 @@ const Footer = () => {
               <li><Link to="/products#ptfe-rf-coaxial-cables" className="text-silver-300 hover:text-white transition-colors">RF Coaxial Cables</Link></li>
               <li><Link to="/products#ptfe-thermocouple-cables" className="text-silver-300 hover:text-white transition-colors">Thermocouple Cables</Link></li>
               <li><Link to="/products#ptfe-insulated-sleeves" className="text-silver-300 hover:text-white transition-colors">Insulated Sleeves</Link></li>
-              <li><Link to="/products#cured-ptfe-tapes-sheets" className="text-silver-300 hover:text-white transition-colors">PTFE Tapes & Sheets</Link></li>
+              {/* <li><Link to="/products#cured-ptfe-tapes-sheets" className="text-silver-300 hover:text-white transition-colors">PTFE Tapes & Sheets</Link></li> */}
             </ul>
           </div>
 
@@ -87,6 +88,10 @@ const Footer = () => {
                 <p className="text-silver-300 text-base">info@meerutptfe.com</p>
               </div>
               <div className="flex items-center space-x-3">
+               <WhatsAppButton w="18px" h="18px" />
+                <a href="https://wa.me/919557074015" className="text-silver-300 text-base underline">Whatsapp</a>
+              </div>
+              <div className="flex items-center space-x-3">
                 <Globe className="w-5 h-5 text-blue-400" />
                 <p className="text-silver-300 text-base">Exporting to Dubai, UK & More</p>
               </div>
@@ -101,9 +106,11 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-silver-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-silver-400 text-sm">
-            © 2024 Meerut PTFE Products Pvt. Ltd. All rights reserved.
+            Copyright © Meerut PTFE Products. All Rights Reserved.
+            <br></br>
+            Website Developed by : <a className="underline" href="https://pixel8ai.com" target="_blank">Team Pixel8 </a> & Promoted by : <a className="underline" href="https://www.sharadupadhyay.com" target="_black">Team Exabyte </a>
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          {/* <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/contact" className="text-silver-400 hover:text-white text-sm transition-colors">
               Privacy Policy
             </Link>
@@ -113,7 +120,7 @@ const Footer = () => {
             <Link to="/contact" className="text-silver-400 hover:text-white text-sm transition-colors">
               Sitemap
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>;

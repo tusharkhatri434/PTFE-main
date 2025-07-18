@@ -38,6 +38,21 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
+       const message = `Name: ${formData.name}
+        Email: ${formData.email}
+        Phone: ${formData.phone}
+        Company: ${formData.company}
+        Subject: ${formData.subject}
+        Message: ${formData.message}`;
+    
+        const encodedMessage = encodeURIComponent(message);
+        const phoneNumber = "919557074015"; // Replace with actual number
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+         // Open new WhatsApp chat window
+         window.open(whatsappLink, "_blank");
+
     toast({
       title: "Message Sent Successfully!",
       description: "Thank you for your inquiry. We'll get back to you within 24 hours."

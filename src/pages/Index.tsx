@@ -65,21 +65,24 @@ const Index = () => {
   const products = [{
     name: "PTFE Equipment Hookup Wires & Cables",
     description: "Premium single-core PTFE-insulated hookup wires engineered for internal equipment wiring requiring exceptional electrical and thermal properties.",
-    image: "/lovable-uploads/5ebda5f1-b99c-4690-95fb-7cddbbd06203.png",
+    image: "/lovable-uploads/products/PTFETeflonInsulatedEquipmentHookupWires&Cables.png",
     features: ["Temperature Range: -65°C to +260°C", "Voltage: 300V/600V/1000V", "Chemical & Fire Resistant"],
-    slug: "ptfe-hookup-wires"
+    slug: "ptfe-hookup-wires",
+    path:"/products#ptfe-hookup-wires"
   }, {
     name: "PTFE High Voltage Corona Resistant Cables",
     description: "Specialized cables for high-voltage applications up to 50 KV with nano-additives to minimize corona discharge and suppress electrical stress.",
-    image: "/lovable-uploads/71f2fb0e-694c-4618-9b7f-041b0379b939.png",
+    image: "/lovable-uploads/products/PTFE_High_Voltage_Corona_Resistant_Cables.png",
     features: ["Up to 50 KV AC Rating", "Corona Inception >22 KV RMS", "Extended 15+ Year Service Life"],
-    slug: "ptfe-high-voltage-corona-cables"
+    slug: "ptfe-high-voltage-corona-cables",
+    path:"/products#ptfe-high-voltage-corona-cables"
   }, {
     name: "PTFE RF Coaxial Cables", 
     description: "High-performance RF coaxial cables for superior signal propagation with low attenuation and consistent impedance across DC to 18 GHz.",
-    image: "/lovable-uploads/ce782253-3fa2-40c8-8a17-54caa6fa0d0b.png",
+    image: "/lovable-uploads/products/PTFE_RF_Coaxial_Cables.png",
     features: ["DC to 18 GHz Frequency Range", "50Ω/75Ω/93Ω Impedance", "MIL-C-17 Compliant"],
-    slug: "ptfe-rf-coaxial-cables"
+    slug: "ptfe-rf-coaxial-cables",
+    path:"/products#ptfe-rf-coaxial-cables"
   }, 
   // {
   //   name: "PTFE Thermocouple Compensating Cables",
@@ -244,34 +247,56 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.map((product, index) => (
-              <Card key={index} className={`card-hover border-0 shadow-lg overflow-hidden animate-on-scroll stagger-${index + 1} hover:shadow-xl transition-all duration-300`}>
-                <div className="aspect-video overflow-hidden">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
-                </div>
-                <CardContent className="p-5">
-                  <h3 className="text-lg font-semibold font-poppins mb-2 text-gray-900">
-                    {product.name}
-                  </h3>
-                  <p className="text-sm mb-4 font-open-sans text-black leading-relaxed">
-                    {product.description}
-                  </p>
-                  <ul className="space-y-2 mb-4">
-                    {product.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center space-x-2 text-sm text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        <span className="text-black">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button onClick={() => handleNavigation(`/products/${product.slug}`)} className="w-full bg-blue-600 hover:bg-blue-700 text-sm text-white">
-                    Know More <ArrowRight className="w-4 h-4 ml-1" />
-                  </Button>
-                </CardContent>
-              </Card>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {products.map((product, index) => (
+    <Card
+      key={index}
+      className={`card-hover border-0 shadow-lg overflow-hidden animate-on-scroll stagger-${index + 1} hover:shadow-xl transition-all duration-300 flex flex-col justify-between`}
+    >
+      <div>
+        <div className="h-96 overflow-hidden">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-full object-cover sm:object-contain md:object-cover transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+
+        <CardContent className="p-5 flex flex-col gap-4">
+          <h3 className="text-lg font-semibold font-poppins text-gray-900">
+            {product.name}
+          </h3>
+
+          <p className="text-sm font-open-sans text-black leading-relaxed">
+            {product.description}
+          </p>
+
+          <ul className="space-y-2">
+            {product.features.map((feature, idx) => (
+              <li
+                key={idx}
+                className="flex items-center space-x-2 text-sm text-gray-600"
+              >
+                <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                <span className="text-black">{feature}</span>
+              </li>
             ))}
-          </div>
+          </ul>
+        </CardContent>
+      </div>
+
+      <div className="px-5 pb-5 mt-auto">
+        <Button
+          onClick={() => handleNavigation(`${product.path}`)}
+          className="w-full bg-blue-600 hover:bg-blue-700 text-sm text-white"
+        >
+          Know More <ArrowRight className="w-4 h-4 ml-1" />
+        </Button>
+      </div>
+    </Card>
+  ))}
+</div>
+
           
           <div className="text-center mt-8 animate-on-scroll">
             <Button onClick={() => handleNavigation('/products')} size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-sm">
