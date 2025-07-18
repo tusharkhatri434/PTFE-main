@@ -254,7 +254,7 @@ const Index = () => {
       className={`card-hover border-0 shadow-lg overflow-hidden animate-on-scroll stagger-${index + 1} hover:shadow-xl transition-all duration-300 flex flex-col justify-between`}
     >
       <div>
-        <div className="h-96 overflow-hidden">
+        <div className="w-full overflow-hidden">
           <img
             src={product.image}
             alt={product.name}
