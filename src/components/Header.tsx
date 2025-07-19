@@ -37,7 +37,7 @@ const Header = () => {
     { name: "Our Products", path: "/products", hasDropdown: true },
     { name: "Our Clients", path: "/clients" },
     { name: "Contact Us", path: "/contact" },
-    { name: "Whatsapp", path: "https://wa.me/919557074015" },
+    // { name: "Whatsapp", path: "https://wa.me/919557074015" },
   ];
 
   useEffect(() => {
@@ -161,7 +161,7 @@ const Header = () => {
                         if (link.name !== "Whatsapp") handleNavigation(link.path);
                       }}
                       className={`py-2 px-4 text-sm font-medium rounded-lg transition-all duration-200 ${
-                        isActive(link)
+                        isActive(link) || link.path=="/contact"
                           ? "bg-blue-600 text-white border border-blue-500"
                           : "text-white hover:text-blue-400 hover:bg-gray-700 border border-transparent"
                       }`}

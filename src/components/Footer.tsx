@@ -40,11 +40,11 @@ const Footer = () => {
             <ul className="space-y-2 ml-1">
               <li className="text-base"><Link to="/" className="text-silver-300 hover:text-white transition-colors">Home</Link></li>
               <li className="text-base"><Link to="/about" className="text-silver-300 hover:text-white transition-colors">About Us</Link></li>
-              <li className="text-base"><Link to="/products" className="text-silver-300 hover:text-white transition-colors">Products</Link></li>
-              <li className="text-base"><Link to="/quality-assurance" className="text-silver-300 hover:text-white transition-colors">Quality Assurance</Link></li>
-              <li className="text-base"><Link to="/clients" className="text-silver-300 hover:text-white transition-colors">Clients</Link></li>
-              <li className="text-base"><Link to="/infrastructure" className="text-silver-300 hover:text-white transition-colors">Infrastructure</Link></li>
-              <li className="text-base"><Link to="/contact" className="text-silver-300 hover:text-white transition-colors">Contact</Link></li>
+              <li className="text-base"><Link to="/products" className="text-silver-300 hover:text-white transition-colors">Our Products</Link></li>
+              <li className="text-base"><Link to="/quality-assurance" className="text-silver-300 hover:text-white transition-colors">Our Certifications</Link></li>
+              <li className="text-base"><Link to="/clients" className="text-silver-300 hover:text-white transition-colors">Our Clients</Link></li>
+              <li className="text-base"><Link to="/infrastructure" className="text-silver-300 hover:text-white transition-colors">Our Infrastructure</Link></li>
+              <li className="text-base"><Link to="/contact" className="text-silver-300 hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -87,10 +87,10 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-blue-400" />
                 <p className="text-silver-300 text-base">info@meerutptfe.com</p>
               </div>
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                <WhatsAppButton w="18px" h="18px" />
                 <a href="https://wa.me/919557074015" className="text-silver-300 text-base underline">Whatsapp</a>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-3">
                 <Globe className="w-5 h-5 text-blue-400" />
                 <p className="text-silver-300 text-base">Exporting to Dubai, UK & More</p>

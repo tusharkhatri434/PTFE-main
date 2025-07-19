@@ -9,6 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Clock, Globe, User } from "lucide-react";
 import HeroSectionAbout from "@/components/HeroSectionAbout";
 import GoogleMapEmbed from "@/components/GoogleMapEmbed";
+import WhatsAppButton from "@/components/WhatsAppButton";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -80,7 +81,13 @@ const Contact = () => {
     icon: <Phone className="w-6 h-6 text-blue-600" />,
     title: "Phone Numbers",
     details: ["+91-121-2440676", "+91-121-2440677"]
-  }, {
+  }, 
+  {
+    icon: <WhatsAppButton/>,
+    title: "Whatsapp",
+    details: ["Link to Whatsapp Chat"]
+  }, 
+  {
     icon: <Mail className="w-6 h-6 text-blue-600" />,
     title: "Email Address",
     details: ["info@meerutptfe.com", "sales@meerutptfe.com"]
@@ -115,7 +122,7 @@ const Contact = () => {
           </p>
         </div>
       </section> */}
-      <HeroSectionAbout title="Our Infrastructure" subtitle="State-of-the-Art 7,000 Sq. Ft. Facility Equipped with Advanced Technology" description="Our modern infrastructure combines advanced manufacturing capabilities with comprehensive quality control systems to deliver superior PTFE products consistently." backgroundImage="/lovable-uploads/img/contactUs.png" />
+      <HeroSectionAbout title="Contact Us" subtitle="Ready to discuss your PTFE solution needs? Get in touch with our expert team today." description="We're here to help you find the perfect PTFE products for your applications. Contact us for quotes, technical specifications, or custom solutions." backgroundImage="/lovable-uploads/img/contactUs.png" />
       
 
       {/* Contact Form and Info */}
@@ -206,9 +213,10 @@ const Contact = () => {
                           <h3 className="text-lg font-semibold font-montserrat mb-2 text-silver-900">
                             {info.title}
                           </h3>
-                          {info.details.map((detail, idx) => <p key={idx} className="font-open-sans text-black">
+                          {(info.title=="Whatsapp" ? <a href="https://wa.me/919557074015" target="_blank" className="underline text-blue-800">Link to Chat</a> :  info.details.map((detail, idx) => <p key={idx} className="font-open-sans text-black">
                               {detail}
-                            </p>)}
+                            </p>)
+                          )}
                         </div>
                       </div>
                     </CardContent>
