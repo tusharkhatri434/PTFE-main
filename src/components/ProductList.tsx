@@ -78,18 +78,20 @@ const ProductList = () => {
     applications: ["Antenna feeders and spectrum analyzer probes", "Medical imaging electronics", "Satellite and defense communications", "RF test and measurement systems"],
     standards: ["MIL-C-17 (RG types)", "RoHS and ITAR-compliant"],
     icon: <Cpu className="w-8 h-8" />
-  }, {
-    id: 5,
-    name: "PTFE Thermocouple Compensating Cables",
-    subtitle: "Precision Temperature Measurement Solutions",
-    image: "/lovable-uploads/9b0ead4d-effa-43e8-9059-02cc56c811bb.png",
-    category: "Thermocouple",
-    overview: "Thermocouple extension cables made with PTFE insulation to preserve signal accuracy across long distances and extreme environments.",
-    keyFeatures: ["Types: KX, JX, TX, EX, NCX, SCX, etc.", "Accuracy: ±1°C deviation across 100 m", "Max Temperature: Up to 1650°C", "Color Coding: ANSI/MIL/IEC standards"],
-    applications: ["Glass industry kilns and cryogenic labs", "Reactor temperature monitors", "Industrial temperature sensors", "Furnaces and high-temperature processes"],
-    standards: ["ASTM E230/E230M", "DIN 43713", "IS 8784"],
-    icon: <Thermometer className="w-8 h-8" />
-  }, {
+  }, 
+  // {
+  //   id: 5,
+  //   name: "PTFE Thermocouple Compensating Cables",
+  //   subtitle: "Precision Temperature Measurement Solutions",
+  //   image: "/lovable-uploads/9b0ead4d-effa-43e8-9059-02cc56c811bb.png",
+  //   category: "Thermocouple",
+  //   overview: "Thermocouple extension cables made with PTFE insulation to preserve signal accuracy across long distances and extreme environments.",
+  //   keyFeatures: ["Types: KX, JX, TX, EX, NCX, SCX, etc.", "Accuracy: ±1°C deviation across 100 m", "Max Temperature: Up to 1650°C", "Color Coding: ANSI/MIL/IEC standards"],
+  //   applications: ["Glass industry kilns and cryogenic labs", "Reactor temperature monitors", "Industrial temperature sensors", "Furnaces and high-temperature processes"],
+  //   standards: ["ASTM E230/E230M", "DIN 43713", "IS 8784"],
+  //   icon: <Thermometer className="w-8 h-8" />
+  // }, 
+  {
     id: 6,
     name: "PTFE Insulated Sleeves",
     subtitle: "Superior Electrical Protection Solutions",

@@ -1,26 +1,46 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Mail, Phone, MapPin, Globe, Award, Users, Clock } from "lucide-react";
 import WhatsAppButton from "./WhatsAppButton";
+
 const Footer = () => {
-  return <footer className="bg-silver-900 text-white relative" style={{
-    backgroundImage: `url('/lovable-uploads/80b09b92-7b05-4d97-a0e7-c4c4a5eb6afc.png')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}>
+  const navigate = useNavigate();
+
+  const handleNavigation = (path: string) => {
+    if (location.pathname !== path) {
+      navigate(path);
+    } else {
+      // ✅ force scroll even if already on same page
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  return (
+    <footer
+      className="bg-silver-900 text-white relative"
+      style={{
+        backgroundImage: `url('/lovable-uploads/80b09b92-7b05-4d97-a0e7-c4c4a5eb6afc.png')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-silver-900/85"></div>
-      
+
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img alt="Meerut PTFE Products" src="/lovable-uploads/5f7ae142-065e-4ace-85eb-c0114887bf76.png" className="w-90 h-15 object-fill" />
-              <div></div>
+              <img
+                alt="Meerut PTFE Products"
+                src="/lovable-uploads/5f7ae142-065e-4ace-85eb-c0114887bf76.png"
+                className="w-90 h-15 object-fill"
+              />
             </div>
             <p className="text-silver-300 mb-4 font-open-sans text-base">
-              Leading manufacturer and exporter of premium PTFE Teflon Insulated Wires and Cables since 1986.
+              Leading manufacturer and exporter of premium PTFE Teflon Insulated
+              Wires and Cables since 1986.
             </p>
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
@@ -36,42 +56,132 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="px-[10px]">
-            <h4 className="text-xl font-semibold font-montserrat mb-4">Quick Links</h4>
+            <h4 className="text-xl font-semibold font-montserrat mb-4">
+              Quick Links
+            </h4>
             <ul className="space-y-2 ml-1">
-              <li className="text-base"><Link to="/" className="text-silver-300 hover:text-white transition-colors">Home</Link></li>
-              <li className="text-base"><Link to="/about" className="text-silver-300 hover:text-white transition-colors">About Us</Link></li>
-              <li className="text-base"><Link to="/products" className="text-silver-300 hover:text-white transition-colors">Our Products</Link></li>
-              <li className="text-base"><Link to="/quality-assurance" className="text-silver-300 hover:text-white transition-colors">Our Certifications</Link></li>
-              <li className="text-base"><Link to="/clients" className="text-silver-300 hover:text-white transition-colors">Our Clients</Link></li>
-              <li className="text-base"><Link to="/infrastructure" className="text-silver-300 hover:text-white transition-colors">Our Infrastructure</Link></li>
-              <li className="text-base"><Link to="/contact" className="text-silver-300 hover:text-white transition-colors">Contact Us</Link></li>
+              <li className="text-base">
+                <button
+                  onClick={() => handleNavigation("/")}
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  Home
+                </button>
+              </li>
+              <li className="text-base">
+                <button
+                  onClick={() => handleNavigation("/about")}
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  About Us
+                </button>
+              </li>
+              <li className="text-base">
+                <button
+                  onClick={() => handleNavigation("/products")}
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  Our Products
+                </button>
+              </li>
+              <li className="text-base">
+                <button
+                  onClick={() => handleNavigation("/quality-assurance")}
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  Our Certifications
+                </button>
+              </li>
+              <li className="text-base">
+                <button
+                  onClick={() => handleNavigation("/clients")}
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  Our Clients
+                </button>
+              </li>
+              <li className="text-base">
+                <button
+                  onClick={() => handleNavigation("/infrastructure")}
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  Our Infrastructure
+                </button>
+              </li>
+              <li className="text-base">
+                <button
+                  onClick={() => handleNavigation("/contact")}
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  Contact Us
+                </button>
+              </li>
             </ul>
           </div>
 
           {/* Products */}
           <div>
-            <h4 className="text-xl font-semibold font-montserrat mb-4">Our Products</h4>
+            <h4 className="text-xl font-semibold font-montserrat mb-4">
+              Our Products
+            </h4>
             <ul className="space-y-2 text-base ml-1">
-              <li><Link to="/products#ptfe-hookup-wires" className="text-silver-300 hover:text-white transition-colors">PTFE Hookup Wires</Link></li>
-              <li><Link to="/products#ptfe-high-voltage-corona-cables" className="text-silver-300 hover:text-white transition-colors">High Voltage Corona Cables</Link></li>
-              <li><Link to="/products#ptfe-multicore-twisted-cables" className="text-silver-300 hover:text-white transition-colors">Multicore Twisted Cables</Link></li>
-              <li><Link to="/products#ptfe-rf-coaxial-cables" className="text-silver-300 hover:text-white transition-colors">RF Coaxial Cables</Link></li>
-              <li><Link to="/products#ptfe-thermocouple-cables" className="text-silver-300 hover:text-white transition-colors">Thermocouple Cables</Link></li>
-              <li><Link to="/products#ptfe-insulated-sleeves" className="text-silver-300 hover:text-white transition-colors">Insulated Sleeves</Link></li>
-              {/* <li><Link to="/products#cured-ptfe-tapes-sheets" className="text-silver-300 hover:text-white transition-colors">PTFE Tapes & Sheets</Link></li> */}
+              <li>
+                <Link
+                  to="/products#ptfe-hookup-wires"
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  PTFE Hookup Wires
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/products#ptfe-high-voltage-corona-cables"
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  PTFE High Voltage Corona Cables
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/products#ptfe-multicore-twisted-cables"
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  PTFE Multicore Twisted Cables
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/products#ptfe-rf-coaxial-cables"
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  PTFE RF Coaxial Cables
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/products#ptfe-insulated-sleeves"
+                  className="text-silver-300 hover:text-white transition-colors"
+                >
+                  PTFE Insulated Sleeves
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold font-montserrat mb-4">Contact Info</h4>
+            <h4 className="text-lg font-semibold font-montserrat mb-4">
+              Contact Info
+            </h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-silver-300 text-base">
-                    C-2, Industrial Estate, Partapur<br />
-                    Meerut, Uttar Pradesh 250103<br />
+                    C-2, Industrial Estate, Partapur
+                    <br />
+                    Meerut, Uttar Pradesh 250103
+                    <br />
                     India
                   </p>
                 </div>
@@ -85,19 +195,21 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <p className="text-silver-300 text-base">info@meerutptfe.com</p>
+                <p className="text-silver-300 text-base">
+                  info@meerutptfe.com
+                </p>
               </div>
-              {/* <div className="flex items-center space-x-3">
-               <WhatsAppButton w="18px" h="18px" />
-                <a href="https://wa.me/919557074015" className="text-silver-300 text-base underline">Whatsapp</a>
-              </div> */}
               <div className="flex items-center space-x-3">
                 <Globe className="w-5 h-5 text-blue-400" />
-                <p className="text-silver-300 text-base">Exporting to Dubai, UK & More</p>
+                <p className="text-silver-300 text-base">
+                  Exporting to Dubai, Hong kong, UAE & More
+                </p>
               </div>
               <div className="flex items-center space-x-3">
                 <Users className="w-5 h-5 text-blue-400" />
-                <p className="text-silver-300 text-base">Director: Mr. Mukesh Kumar</p>
+                <p className="text-silver-300 text-base">
+                  Director: Mr. Mukesh Kumar
+                </p>
               </div>
             </div>
           </div>
@@ -107,22 +219,30 @@ const Footer = () => {
         <div className="border-t border-silver-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-silver-400 text-sm">
             Copyright © Meerut PTFE Products. All Rights Reserved.
-            <br></br>
-            Website Developed by : <a className="underline" href="https://pixel8ai.com" target="_blank">Team Pixel8 </a> & Promoted by : <a className="underline" href="https://www.sharadupadhyay.com" target="_black">Team Exabyte </a>
+            <br />
+            Website Developed by :{" "}
+            <a
+              className="underline"
+              href="https://pixel8ai.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Team Pixel8
+            </a>{" "}
+            & Promoted by :{" "}
+            <a
+              className="underline"
+              href="https://www.sharadupadhyay.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Team Exabyte
+            </a>
           </p>
-          {/* <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/contact" className="text-silver-400 hover:text-white text-sm transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/contact" className="text-silver-400 hover:text-white text-sm transition-colors">
-              Terms of Service
-            </Link>
-            <Link to="/contact" className="text-silver-400 hover:text-white text-sm transition-colors">
-              Sitemap
-            </Link>
-          </div> */}
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

@@ -102,7 +102,7 @@ const Contact = () => {
   }, {
     icon: <Globe className="w-6 h-6 text-blue-600" />,
     title: "Export Markets",
-    details: ["Dubai, UAE", "United Kingdom", "Global Shipping Available"]
+    details: ["Dubai, UAE", "United Kingdom","Hong Kong","Global Shipping Available"]
   }];
   return <div className="min-h-screen">
       <Header />

@@ -204,52 +204,52 @@ const ProductCarousel = () => {
       ],
       icon: <Cpu className="w-6 h-6" />
     },
-    {
-      id: 5,
-      name: "PTFE Thermocouple Compensating Cables",
-      subtitle: "Precision Temperature Measurement Solutions",
-      image: "/lovable-uploads/7678728b-ba4e-47bd-831d-68e8b419d1a6.png",
-      category: "Thermocouple",
-      description: "Our PTFE Thermocouple Compensating Cables provide high accuracy and reliability in temperature measurement and control systems. These cables are known for their heat resistance, waterproofing, and chemical resistance, making them suitable for harsh environments.",
-      extendedDescription: "Designed for precision temperature measurement applications, these cables maintain signal integrity across extreme temperature ranges. The PTFE insulation ensures minimal drift and maximum accuracy in critical temperature monitoring systems.",
-      keyFeatures: [
-        "Suitable for transmitting thermocouple signals",
-        "Outstanding mechanical and electrical properties",
-        "Resistant to harsh chemicals and moisture",
-        "High accuracy signal transmission",
-        "Extended temperature range capability"
-      ],
-      advantages: [
-        "High accuracy and reliability",
-        "Excellent heat resistance and waterproofing",
-        "Suitable for harsh industrial environments",
-        "Long-term stability and consistency",
-        "Multiple thermocouple type compatibility"
-      ],
-      specifications: [
-        { property: "Conductor", value: "NiCr-NiAI / Iron-Con / Cu-Con" },
-        { property: "Temperature Range", value: "-65°C to +200°C" },
-        { property: "Measurement Temperature", value: "Up to 1650°C" },
-        { property: "Voltage Rating", value: "300 / 500 V" },
-        { property: "Tensile Strength", value: "12.50 N/mm" },
-        { property: "Standards", value: "DIN 43722 / ANSI MC 96.1 / IS 8784-1987" }
-      ],
-      specHeaders: ["Property", "Value"],
-      applications: [
-        "Industrial temperature measurement",
-        "Process control systems",
-        "HVAC and building automation",
-        "Laboratory and research",
-        "Power generation monitoring"
-      ],
-      technicalData: [
-        { property: "Accuracy Class", value: "±0.75°C or ±0.004|t|" },
-        { property: "Insulation Resistance", value: "> 100 MΩ at 500V DC" },
-        { property: "Thermocouple Types", value: "J, K, T, E, R, S, B" },
-        { property: "Response Time", value: "< 0.5 seconds" }
-      ],
-      icon: <Thermometer className="w-6 h-6" />
-    },
+    // {
+    //   id: 5,
+    //   name: "PTFE Thermocouple Compensating Cables",
+    //   subtitle: "Precision Temperature Measurement Solutions",
+    //   image: "/lovable-uploads/7678728b-ba4e-47bd-831d-68e8b419d1a6.png",
+    //   category: "Thermocouple",
+    //   description: "Our PTFE Thermocouple Compensating Cables provide high accuracy and reliability in temperature measurement and control systems. These cables are known for their heat resistance, waterproofing, and chemical resistance, making them suitable for harsh environments.",
+    //   extendedDescription: "Designed for precision temperature measurement applications, these cables maintain signal integrity across extreme temperature ranges. The PTFE insulation ensures minimal drift and maximum accuracy in critical temperature monitoring systems.",
+    //   keyFeatures: [
+    //     "Suitable for transmitting thermocouple signals",
+    //     "Outstanding mechanical and electrical properties",
+    //     "Resistant to harsh chemicals and moisture",
+    //     "High accuracy signal transmission",
+    //     "Extended temperature range capability"
+    //   ],
+    //   advantages: [
+    //     "High accuracy and reliability",
+    //     "Excellent heat resistance and waterproofing",
+    //     "Suitable for harsh industrial environments",
+    //     "Long-term stability and consistency",
+    //     "Multiple thermocouple type compatibility"
+    //   ],
+    //   specifications: [
+    //     { property: "Conductor", value: "NiCr-NiAI / Iron-Con / Cu-Con" },
+    //     { property: "Temperature Range", value: "-65°C to +200°C" },
+    //     { property: "Measurement Temperature", value: "Up to 1650°C" },
+    //     { property: "Voltage Rating", value: "300 / 500 V" },
+    //     { property: "Tensile Strength", value: "12.50 N/mm" },
+    //     { property: "Standards", value: "DIN 43722 / ANSI MC 96.1 / IS 8784-1987" }
+    //   ],
+    //   specHeaders: ["Property", "Value"],
+    //   applications: [
+    //     "Industrial temperature measurement",
+    //     "Process control systems",
+    //     "HVAC and building automation",
+    //     "Laboratory and research",
+    //     "Power generation monitoring"
+    //   ],
+    //   technicalData: [
+    //     { property: "Accuracy Class", value: "±0.75°C or ±0.004|t|" },
+    //     { property: "Insulation Resistance", value: "> 100 MΩ at 500V DC" },
+    //     { property: "Thermocouple Types", value: "J, K, T, E, R, S, B" },
+    //     { property: "Response Time", value: "< 0.5 seconds" }
+    //   ],
+    //   icon: <Thermometer className="w-6 h-6" />
+    // },
     {
       id: 6,
       name: "PTFE Insulated Sleeves",

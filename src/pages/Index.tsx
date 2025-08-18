@@ -65,21 +65,21 @@ const Index = () => {
   const products = [{
     name: "PTFE Equipment Hookup Wires & Cables",
     description: "Premium single-core PTFE-insulated hookup wires engineered for internal equipment wiring requiring exceptional electrical and thermal properties.",
-    image: "/lovable-uploads/products/PTFETeflonInsulatedEquipmentHookupWires&Cables.png",
+    image: "/lovable-uploads/newProducts/PTFE_Insulated_Equipment_Hookup_Wires&Cables.png",
     features: ["Temperature Range: -65°C to +260°C", "Voltage: 300V/600V/1000V", "Chemical & Fire Resistant"],
     slug: "ptfe-hookup-wires",
     path:"/products#ptfe-hookup-wires"
   }, {
     name: "PTFE High Voltage Corona Resistant Cables",
     description: "Specialized cables for high-voltage applications up to 50 KV with nano-additives to minimize corona discharge and suppress electrical stress.",
-    image: "/lovable-uploads/products/PTFE_High_Voltage_Corona_Resistant_Cables.png",
+    image: "/lovable-uploads/newProducts/PTFE_High_Voltage_Corona_Resistant_Cables.png",
     features: ["Up to 50 KV AC Rating", "Corona Inception >22 KV RMS", "Extended 15+ Year Service Life"],
     slug: "ptfe-high-voltage-corona-cables",
     path:"/products#ptfe-high-voltage-corona-cables"
   }, {
     name: "PTFE RF Coaxial Cables", 
     description: "High-performance RF coaxial cables for superior signal propagation with low attenuation and consistent impedance across DC to 18 GHz.",
-    image: "/lovable-uploads/products/PTFE_RF_Coaxial_Cables.png",
+    image: "/lovable-uploads/newProducts/PTFE_RF_Coaxial_Cables.png",
     features: ["DC to 18 GHz Frequency Range", "50Ω/75Ω/93Ω Impedance", "MIL-C-17 Compliant"],
     slug: "ptfe-rf-coaxial-cables",
     path:"/products#ptfe-rf-coaxial-cables"

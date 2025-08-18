@@ -33,12 +33,15 @@ const Products = () => {
   useEffect(() => {
     if (hash) {
       const id = hash.replace("#", "");
+      console.log(id)
       const element = document.getElementById(id);
       if (element) {
         setTimeout(()=>{
           element.scrollIntoView({ behavior: "smooth", block: "start" });
-        },100)
+        },300)
       }
+    }else{
+        // window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [hash]);
 

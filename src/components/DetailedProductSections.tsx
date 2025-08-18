@@ -15,7 +15,7 @@ const DetailedProductSections = () => {
   const products = [{
     id: "ptfe-hookup-wires",
     title: "PTFE (Teflon) Insulated Equipment Hookup Wires & Cables",
-    image: "/lovable-uploads/products/PTFETeflonInsulatedEquipmentHookupWires&Cables.png",
+    image: "/lovable-uploads/newProducts/PTFE_Insulated_Equipment_Hookup_Wires&Cables.png",
     overview: "These PTFE-insulated hookup wires are specially designed for internal equipment wiring in high-performance electronic systems. Withstanding extreme temperatures and harsh environments, they ensure stable operation in aerospace, military, and industrial control systems. Their consistent dielectric properties across a wide frequency range make them ideal for sensitive applications.",
     features: ["Withstands temperatures from -65°C to +260°C", "Uniform insulation thickness", "Excellent resistance to flame, chemicals, and abrasion", "High frequency and low noise transmission", "Available in a wide range of gauge sizes and color codes"],
     applications: ["Aerospace and military avionics", "High-end audio equipment", "Nuclear power instrumentation", "Medical imaging machines", "Laboratory-grade analytical instruments"],
@@ -50,7 +50,7 @@ const DetailedProductSections = () => {
   }, {
     id: "ptfe-high-voltage-corona-cables",
     title: "PTFE High Voltage Corona Resistant Cables",
-    image: "/lovable-uploads/products/PTFE_High_Voltage_Corona_Resistant_Cables.png",
+    image: "/lovable-uploads/newProducts/PTFE_High_Voltage_Corona_Resistant_Cables.png",
     overview: "PTFE High Voltage Corona Resistant Cables are optimized for continuous operation under high electric stress. Their advanced construction resists partial discharges and corona inception that typically degrade cable life. These are perfect for use in pulse applications and environments requiring exceptional dielectric endurance.",
     features: ["Multi-layered PTFE insulation with nano-enhanced compounds", "Voids and crack-free extruded walls", "Corona-resistant life >10,000 hrs at rated voltage", "Capable of high pulse repetition rate (PRR)", "Low partial discharge (<5 pC at 20 kV)"],
     applications: ["MRI and diagnostic equipment", "Pulse-forming networks in radar", "Ionizers and ozone generators", "Plasma research instruments", "High-energy lab circuits"],
@@ -82,7 +82,7 @@ const DetailedProductSections = () => {
   }, {
     id: "ptfe-multicore-twisted-cables",
     title: "Single / Multicore Twisted, Shielded & Sheathed Cables",
-    image: "/lovable-uploads/products/Single_Multicore_Twisted_Shielded_Sheathed_Cables.png",
+    image: "/lovable-uploads/newProducts/Single_Multicore_Twisted_ShieldedSheathedCables.png",
     overview: "These cables are engineered for applications requiring noise immunity and minimal signal loss. Their twisted pair arrangement and shielding combinations reduce EMI and crosstalk, making them suitable for industrial networking, defense communication, and control systems. They are often used in low-voltage analog and digital signal transmission.",
     features: ["Custom-configurable core layouts", "Multiple shielding: braid, foil, combination", "High resistance to fire, oil, UV, solvents", "Excellent flexibility for dynamic movement", "Long operational life in hostile environments"],
     applications: ["RS-232, RS-485, CAN-Bus communications", "Factory automation and robotics", "Missile system interconnects", "Shipboard wiring systems", "Data acquisition systems"],
@@ -114,7 +114,7 @@ const DetailedProductSections = () => {
   }, {
     id: "ptfe-rf-coaxial-cables",
     title: "PTFE RF Coaxial Cables",
-    image: "/lovable-uploads/products/PTFE_RF_Coaxial_Cables.png",
+    image: "/lovable-uploads/newProducts/PTFE_RF_Coaxial_Cables.png",
     overview: "These coaxial cables are designed to maintain low signal attenuation over long distances. They offer high shielding effectiveness and are highly stable across wide frequency bands, ideal for critical communication systems and RF testing environments.",
     features: ["High impedance consistency", "Very low dielectric constant", "Expanded PTFE dielectric for stable propagation", "Resistance to RF radiation leakage"],
     applications: ["Satellite uplink and telemetry", "Military-grade radar systems", "RF test and measurement systems", "EMI-sensitive communication setups"],
@@ -140,36 +140,38 @@ const DetailedProductSections = () => {
       property: "Jacket Material",
       value: "FEP/PTFE"
     }]
-  }, {
-    id: "ptfe-thermocouple-cables",
-    title: "PTFE Thermocouple Compensating Cables",
-    image: "/lovable-uploads/products/PTFE_Thermocouple_Compensating_Cables.png",
-    overview: "Designed for extending thermocouple signals with minimal signal distortion and high chemical resistance, these cables ensure accuracy and durability even in corrosive industrial environments.",
-    features: ["ANSI and IEC color-coded insulation", "Excellent resistance to acids and solvents", "Twisted pair construction for noise immunity", "Stable EMF over temperature variations"],
-    applications: ["Cement kilns and furnaces", "Petrochemical and metallurgical labs", "Steam turbine monitoring", "Cryogenic testing chambers"],
-    specifications: [{
-      property: "Compatible Types",
-      value: "K, J, T, E, N, R, S, B"
-    }, {
-      property: "Conductor",
-      value: "Thermocouple Alloy (Matched)"
-    }, {
-      property: "Jacket",
-      value: "PTFE / FEP / PFA"
-    }, {
-      property: "Temp Range",
-      value: "-70°C to +250°C"
-    }, {
-      property: "Max Pair Count",
-      value: "Up to 24 Pairs"
-    }, {
-      property: "Color Code Standard",
-      value: "ANSI/IEC"
-    }]
-  }, {
+  },
+  //  {
+  //   id: "ptfe-thermocouple-cables",
+  //   title: "PTFE Thermocouple Compensating Cables",
+  //   image: "/lovable-uploads/products/PTFE_Thermocouple_Compensating_Cables.png",
+  //   overview: "Designed for extending thermocouple signals with minimal signal distortion and high chemical resistance, these cables ensure accuracy and durability even in corrosive industrial environments.",
+  //   features: ["ANSI and IEC color-coded insulation", "Excellent resistance to acids and solvents", "Twisted pair construction for noise immunity", "Stable EMF over temperature variations"],
+  //   applications: ["Cement kilns and furnaces", "Petrochemical and metallurgical labs", "Steam turbine monitoring", "Cryogenic testing chambers"],
+  //   specifications: [{
+  //     property: "Compatible Types",
+  //     value: "K, J, T, E, N, R, S, B"
+  //   }, {
+  //     property: "Conductor",
+  //     value: "Thermocouple Alloy (Matched)"
+  //   }, {
+  //     property: "Jacket",
+  //     value: "PTFE / FEP / PFA"
+  //   }, {
+  //     property: "Temp Range",
+  //     value: "-70°C to +250°C"
+  //   }, {
+  //     property: "Max Pair Count",
+  //     value: "Up to 24 Pairs"
+  //   }, {
+  //     property: "Color Code Standard",
+  //     value: "ANSI/IEC"
+  //   }]
+  // },
+   {
     id: "ptfe-insulated-sleeves",
     title: "PTFE Insulated Sleeves",
-    image: "/lovable-uploads/products/Ptfe_Insulated_sleeves.png",
+    image: "/lovable-uploads/newProducts/PTFE_Insulated_Sleeves.png",
     overview: "These are thin-wall, flexible sleeves manufactured with high-grade PTFE to insulate splices and components from abrasion and electrical discharge. Their heat and chemical resistance makes them indispensable in aerospace and nuclear plants.",
     features: ["Continuous operation at 260°C", "Smooth inner and outer surfaces", "Non-flammable and halogen-free", "Available in rolls and cut lengths"],
     applications: ["Terminal lead insulation", "Harness bundling", "Motor and transformer lead protection", "Circuit board terminal shielding"],
@@ -229,15 +231,19 @@ const DetailedProductSections = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8 items-center">
   {/* Left Column - Image */}
-  <div className="flex justify-center">
-    <div className="h-96 w-full max-w-md bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-3 flex items-center justify-center shadow-sm">
-      <img
-        src={product.image}
-        alt={product.title}
-        className="w-full h-full object-cover rounded-lg shadow-md"
-      />
-    </div>
+<div className="flex justify-center">
+  <div className="h-full sm:h-96 rounded-3xl overflow-hidden flex items-center justify-center bg-white">
+    <img
+      src={product.image}
+      alt={product.title}
+      className="w-full h-full object-contain"
+    />
   </div>
+</div>
+
+
+
+
 
   {/* Right Column - Product Overview */}
   <div className="flex flex-col justify-center text-center lg:text-left">

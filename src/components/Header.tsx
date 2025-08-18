@@ -21,7 +21,7 @@ const Header = () => {
     { name: "PTFE High Voltage Corona Cables", slug: "ptfe-high-voltage-corona-cables" },
     { name: "PTFE Multicore Twisted Cables", slug: "ptfe-multicore-twisted-cables" },
     { name: "PTFE RF Coaxial Cables", slug: "ptfe-rf-coaxial-cables" },
-    { name: "PTFE Thermocouple Cables", slug: "ptfe-thermocouple-cables" },
+    // { name: "PTFE Thermocouple Cables", slug: "ptfe-thermocouple-cables" },
     { name: "PTFE Insulated Sleeves", slug: "ptfe-insulated-sleeves" },
   ];
 
@@ -40,24 +40,24 @@ const Header = () => {
     // { name: "Whatsapp", path: "https://wa.me/919557074015" },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 20);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleNavigation = (path: string) => {
-    if (location.pathname !== path) {
+    if (location.pathname + location.hash !== path) {
       navigate(path);
-      setTimeout(scrollToTop, 50);
+      // setTimeout(scrollToTop, 50);
     } else {
-      scrollToTop();
+      scrollToTop()
     }
     setIsMobileMenuOpen(false);
     setMobileDropdown(null);

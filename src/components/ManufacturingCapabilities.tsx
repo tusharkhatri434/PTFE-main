@@ -69,7 +69,7 @@ const ManufacturingCapabilities = () => {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src="/lovable-uploads/img/In-HousePrecisionManufacturinginMeerut.jpeg" 
+                src="/lovable-uploads/newProducts/In_house_precision_manufacturing_meerut_image.png" 
                 alt="Manufacturing Facility" 
                 className="w-full h-96 sm:h-[34rem] object-cover group-hover:scale-105 transition-transform duration-500" 
               />
