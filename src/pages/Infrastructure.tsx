@@ -123,7 +123,7 @@ const Infrastructure = () => {
           </p>
         </div>
       </section> */}
-      <HeroSectionAbout title="Our Infrastructure" subtitle="State-of-the-Art 7,000 Sq. Ft. Facility Equipped with Advanced Technology" description="Our modern infrastructure combines advanced manufacturing capabilities with comprehensive quality control systems to deliver superior PTFE products consistently." backgroundImage="/lovable-uploads/img/ourInfrastrucutre.jpg" />
+      <HeroSectionAbout title="Our Infrastructure" subtitle="State-of-the-Art 7,000 Sq. Ft. Facility Equipped with Advanced Technology" description="Our modern infrastructure combines advanced manufacturing capabilities with comprehensive quality control systems to deliver superior PTFE products consistently." backgroundImage="/lovable-uploads/img/pugu-road-dar-es-salaam.jpg" />
 
       {/* Infrastructure Stats */}
       <section className="py-20 bg-white">
@@ -274,7 +274,7 @@ const Infrastructure = () => {
             </div>
             
             <div>
-              <img alt="Manufacturing Facility" className="rounded-lg shadow-2xl mb-6 w-full h-[30rem] md:h-[45rem]" src="/lovable-uploads/img/AdvancedEquipment&Machinery.jpeg" />
+              <img alt="Manufacturing Facility" className="rounded-lg shadow-2xl mx-auto h-[30rem] md:h-[40rem]" src="/lovable-uploads/newProducts/In_house_precision_manufacturing_meerut_image.png" />
               {/* <img alt="Quality Testing Lab" className="rounded-lg shadow-2xl" src="/lovable-uploads/8509ae45-aebc-47fe-8d2c-0ff3df1e8cf4.jpg" /> */}
             </div>
           </div>
