@@ -12,10 +12,6 @@ const Index = () => {
 
   useEffect(() => {
     // Scroll to top when component mounts
-    window.scrollTo({
-      top: 0,
-      behavior: 'instant'
-    });
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -35,12 +31,6 @@ const Index = () => {
   // Enhanced navigation function
   const handleNavigation = (path: string) => {
     navigate(path);
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }, 50);
   };
 
   const features = [{

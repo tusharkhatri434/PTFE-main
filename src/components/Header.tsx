@@ -52,15 +52,16 @@ const Header = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+
   const handleNavigation = (path: string) => {
-    if (location.pathname + location.hash !== path) {
+    if (location.pathname !== path) {
       navigate(path);
-      // setTimeout(scrollToTop, 50);
+        setIsMobileMenuOpen(false);
+        setMobileDropdown(null);
     } else {
-      scrollToTop()
+      // ✅ force scroll even if already on same page
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
-    setIsMobileMenuOpen(false);
-    setMobileDropdown(null);
   };
 
   const isActive = (link: any) => {

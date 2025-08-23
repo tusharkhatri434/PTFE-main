@@ -10,6 +10,9 @@ import ProductsFAQ from "@/components/ProductsFAQ";
 import ProductsFinalCTA from "@/components/ProductsFinalCTA";
 import { useLocation } from "react-router-dom";
 const Products = () => {
+
+    const location = useLocation();
+
   // Animation on scroll functionality
   useEffect(() => {
     const observerOptions = {
@@ -28,22 +31,24 @@ const Products = () => {
     return () => observer.disconnect();
   }, []);
 
-    const { hash } = useLocation();
+useEffect(() => {
+  if (location.hash) {
+    const id = location.hash.replace("#", "");
+    const element = document.getElementById(id);
+    if (element) {
+      setTimeout(() => {
+        const rect = element.getBoundingClientRect();
+        const alreadyVisible =
+          rect.top >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
 
-  useEffect(() => {
-    if (hash) {
-      const id = hash.replace("#", "");
-      console.log(id)
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(()=>{
+        if (!alreadyVisible) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
-        },300)
-      }
-    }else{
-        // window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }, 300);
     }
-  }, [hash]);
+  }
+}, [location]);
 
 
   console.log("Products page loaded");
