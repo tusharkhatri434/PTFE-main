@@ -5,7 +5,7 @@ import { Award, Shield, Zap, Thermometer } from "lucide-react";
 
 const ProductsHero = () => {
   return (
-    <section className="relative min-h-[90vh] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+    <section id="pros" className="relative min-h-[90vh] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img

@@ -78,7 +78,7 @@ const Footer = () => {
               </li>
               <li className="text-base">
                 <button
-                  onClick={() => handleNavigation("/products")}
+                  onClick={() => handleNavigation("/products#pros")}
                   className="text-silver-300 hover:text-white transition-colors"
                 >
                   Our Products

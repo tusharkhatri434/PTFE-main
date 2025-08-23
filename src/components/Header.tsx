@@ -123,7 +123,7 @@ const Header = () => {
                           <>
                             <DropdownMenuItem asChild>
                               <button
-                                onClick={() => handleNavigation("/products")}
+                                onClick={() => handleNavigation("/products#pros")}
                                 className="w-full px-4 py-3 text-sm text-left font-medium text-gray-200 hover:bg-gray-700 hover:text-blue-400 rounded-lg border-b border-gray-600 mb-2"
                               >
                                 All Products
@@ -221,7 +221,7 @@ const Header = () => {
                       {link.name === "Our Products" ? (
                         <>
                           <button
-                            onClick={() => handleNavigation("/products")}
+                            onClick={() => handleNavigation("/products#pros")}
                             className="w-full text-left py-2 px-3 text-sm text-gray-300 hover:text-blue-400 font-medium"
                           >
                             All Products
